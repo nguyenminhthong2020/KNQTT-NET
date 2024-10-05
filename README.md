@@ -7,7 +7,7 @@
 - Upwork
 - tham khảo: https://www.linkedin.com/in/quang-tran-395492272/
 
-2. Chọn những công nghệ cơ bản sẽ dùng (technical)
+2. Chọn những công nghệ cơ bản. sẽ dùng (technical)
    2.1. client NextJS (.ts, tailwindss, material ui, .eslint, app router)
 
    - Xem xét: React Hooks Form, prime/react, react skeleton (loading,...)

@@ -1,0 +1,9 @@
+# Định nghĩa code owners cho toàn bộ repository
+
+- @nguyenminhthong2020
+
+<!-- # Định nghĩa code owners cho một thư mục cụ thể
+/path/to/folder/ @team-name
+
+# Định nghĩa code owners cho một file cụ thể
+/path/to/file.ext @username3 -->

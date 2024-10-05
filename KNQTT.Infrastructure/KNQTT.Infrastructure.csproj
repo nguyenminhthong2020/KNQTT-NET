@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Configurations\" />
+    <Folder Include="Data\Interceptors\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Consts\" />
+    <Folder Include="Database\" />
+    <Folder Include="Enums\" />
+    <Folder Include="HttpClient\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KNQTT.Core\KNQTT.Core.csproj" />
+  </ItemGroup>
+
+</Project>

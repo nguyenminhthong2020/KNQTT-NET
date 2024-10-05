@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Behaviours\" />
+    <Folder Include="Common\Models\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Student\Commands\" />
+    <Folder Include="Student\Dtos\" />
+    <Folder Include="Student\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KNQTT.Core\KNQTT.Core.csproj" />
+    <ProjectReference Include="..\KNQTT.Infrastructure\KNQTT.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -12,15 +12,23 @@
   </ItemGroup>
 
 	<ItemGroup>
+	    <!-- Làm việc với Kafka -->
 		<PackageReference Include="Confluent.Kafka" Version="2.5.3" />
+
+		<!-- Dành cho CQRS pattern + validate các thông tin api gửi lên -->
 		<PackageReference Include="FluentValidation" Version="11.10.0" />
 		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
 		<PackageReference Include="MediatR" Version="12.4.1" />
+
 		<PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.8" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+
+		<!-- Làm việc với MongoDB -->
 		<PackageReference Include="MongoDB.Driver" Version="2.29.0" />
 		<PackageReference Include="opentelemetry" Version="1.9.0" />
+
+		<!-- Làm việc với OpenTelemetry (xem xét thôi, có thể không dùng) -->
 		<PackageReference Include="opentelemetry.exporter.console" Version="1.9.0" />
 		<PackageReference Include="opentelemetry.exporter.jaeger" Version="1.5.1" />
 		<PackageReference Include="opentelemetry.exporter.opentelemetryprotocol" Version="1.9.0" />
@@ -28,12 +36,17 @@
 		<PackageReference Include="opentelemetry.instrumentation.aspnetcore" Version="1.9.0" />
 		<PackageReference Include="opentelemetry.instrumentation.http" Version="1.9.0" />
 		<PackageReference Include="opentelemetry.instrumentation.sqlclient" Version="1.0.0-rc9.14" />
+
+		<!-- Mấy cái này chủ yếu là dành cho ghi log - Serilog  -->
 		<PackageReference Include="Serilog.Expressions" Version="5.0.0" />
 		<PackageReference Include="Serilog.Sinks.Async" Version="2.0.0" />
 		<PackageReference Include="StackExchange.Redis" Version="2.8.16" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.8.1" />
+
+		<!-- Làm việc với Database  -->
 		<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
 		<PackageReference Include="Dapper" Version="2.1.35" />
+		
 		<PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.8.1" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.8.1" />
 		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.8.1" />

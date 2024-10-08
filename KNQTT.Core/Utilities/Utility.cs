@@ -36,11 +36,6 @@ namespace Infrastructure.Core.Utilities
             return Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT").ToLower().Equals("development");
         }
 
-        public static bool IsStaging()
-        {
-            return Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT").ToLower().Equals("staging");
-        }
-
         public static bool IsProduction()
         {
             return Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT").ToLower().Equals("production");
@@ -123,11 +118,11 @@ namespace Infrastructure.Core.Utilities
             HttpClient _httpClient = new HttpClient();
             try
             {
-                List<string> account = new List<string>() { "conglt16@fpt.com", "khiembt@fpt.com", "phongdh10@fpt.com", "tutt25@fpt.com", "hungnv165@fpt.com" };
+                List<string> account = new List<string>() { "test@gmail.com" };
 
                 var proxy = new WebProxy
                 {
-                    Address = new Uri("http://isc-proxy.hcm.fpt.vn:80"),
+                    Address = new Uri("http://server-test:80"),
                     BypassProxyOnLocal = true,
                     UseDefaultCredentials = false,
                 };
@@ -153,7 +148,7 @@ namespace Infrastructure.Core.Utilities
                         {
                             Content = new StringContent(JsonConvert.SerializeObject(content), Encoding.UTF8, "application/json"),
                             Method = HttpMethod.Post,
-                            RequestUri = new System.Uri(string.Concat("https://alerts.soc.fpt.net", string.Format("/webhooks/{0}/facebook", "KPBVo4TYzaUblOaqpG8rwYBj8uiGBttP")))
+                            RequestUri = new System.Uri(string.Concat("", string.Format("/webhooks/{0}/facebook", "")))
                         };
                         var rpSendBotChat = _httpClient.SendAsync(httpReq);
                     });

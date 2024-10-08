@@ -78,7 +78,7 @@ namespace Infrastructure.Core.Hosting
             //    });
             //    app.UseSwaggerUI(c =>
             //    {
-            //        c.SwaggerEndpoint($"/{ProjectConfig.Options.RoutePrefix}/docs/v1/swagger.json", $"SalePlatform API Document {env.EnvironmentName}");
+            //        c.SwaggerEndpoint($"/{ProjectConfig.Options.RoutePrefix}/docs/v1/swagger.json", $"KNQTT API Document {env.EnvironmentName}");
             //        c.RoutePrefix = string.Concat(CoreOptions.ProjectConfig.Options.RoutePrefix, "/docs");
             //    });
             //}

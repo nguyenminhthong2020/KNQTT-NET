@@ -1,7 +1,9 @@
 ﻿using D2DAggregation.Infrastructure.Core.Logging;
 using Infrastructure.Core.Utilities;
+using Newtonsoft.Json;
 using Serilog;
 using System.Diagnostics;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -55,8 +57,28 @@ namespace Infrastructure.Core.Logging
         {
             _ = Task.Run(() =>
             {
-                CoreAsyncLog.InsertLog(logObject);
+                //CoreAsyncLog.InsertLog(logObject);
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine($"\n-IP Address: " + GetIPAddress());
+                sb.AppendLine("-Log: \n" + JsonConvert.SerializeObject(logObject));
+                Console.WriteLine(sb.ToString());
             });
+        }
+
+        private static string GetIPAddress()
+        {
+            string result = string.Empty;
+            try
+            {
+                string hostName = Dns.GetHostName();
+                IPAddress[] ipAddress = Dns.GetHostAddresses(hostName);
+                result = string.Join(",", ipAddress.Where(ip => ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork));
+            }
+            catch
+            {
+                result = string.Empty;
+            }
+            return result;
         }
     }
 

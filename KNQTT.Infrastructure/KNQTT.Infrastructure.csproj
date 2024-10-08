@@ -29,6 +29,8 @@
 		<PackageReference Include="NEST" Version="7.17.5" />
 		<PackageReference Include="NEST.JsonNetSerializer" Version="7.17.5" />
 		<!--<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />-->
+
+    <!-- health checks kiểm tra status các server sqlserver, redis, mongodb,.. (chưa chắc sẽ dùng) -->
 		<PackageReference Include="AspNetCore.HealthChecks.Redis" Version="8.0.1" />
 		<PackageReference Include="AspNetCore.HealthChecks.Kafka" Version="8.0.1" />
 		<PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="8.0.1" />

@@ -1,4 +1,4 @@
-﻿using D2DAggregation.Infrastructure.Core.Logging;
+﻿using KNQTT.Infrastructure.Core.Logging;
 using Infrastructure.Core.Utilities;
 using Newtonsoft.Json;
 using Serilog;

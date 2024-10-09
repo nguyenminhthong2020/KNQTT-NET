@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 
-namespace D2DAggregation.Infrastructure.Core.Logging
+namespace KNQTT.Infrastructure.Core.Logging
 {
     public static class CoreAsyncLog
     {

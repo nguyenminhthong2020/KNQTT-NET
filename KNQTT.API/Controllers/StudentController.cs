@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Asp.Versioning;
+using Microsoft.AspNetCore.Mvc;
 
 namespace KNQTT.API.Controllers
 {
+    [ApiVersion(2.0)]
     [ApiController]
     [Route("[controller]")]
     public class StudentController : ControllerBase

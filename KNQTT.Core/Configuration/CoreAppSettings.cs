@@ -34,11 +34,6 @@ namespace Infrastructure.Core.Configuration
         public class ConnectionStringSettings
         {
             /// <summary>
-            /// Kết nối dùng để ghi db Inside
-            /// </summary>
-            public string InsideRead { get; set; }
-
-            /// <summary>
             /// Kết nối dùng để ghi db 
             /// </summary>
             public string DatabaseWrite { get; set; }

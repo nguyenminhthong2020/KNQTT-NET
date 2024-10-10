@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Common\Behaviours\" />
     <Folder Include="Common\Models\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Student\Commands\" />
     <Folder Include="Student\Dtos\" />
     <Folder Include="Student\Queries\" />
